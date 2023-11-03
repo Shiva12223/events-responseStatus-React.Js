@@ -1,0 +1,4539 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "events",
+      "private": true,
+      "version": "1.0.0",
+      "engines": {
+        "node": "^10.13 || 12 || 14 || 15",
+        "npm": ">=6"
+      },
+      "dependencies": {
+        "@testing-library/jest-dom": "5.11.9",
+        "@testing-library/react": "11.2.5",
+        "@testing-library/user-event": "12.6.2",
+        "chalk": "4.1.0",
+        "react": "17.0.1",
+        "react-dom": "17.0.1"
+      },
+      "devDependencies": {
+        "eslint-config-airbnb": "18.2.1",
+        "eslint-config-prettier": "8.1.0",
+        "eslint-plugin-prettier": "3.3.1",
+        "husky": "4.3.8",
+        "lint-staged": "10.5.4",
+        "npm-run-all": "4.1.5",
+        "prettier": "2.2.1",
+        "react-scripts": "4.0.3"
+      },
+      "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix src/",
+        "format": "prettier --write \"./src\"",
+        "run-all": "npm-run-all --parallel test lint:fix"
+      },
+      "lint-staged": {
+        "*.js": [
+          "npm run lint:fix"
+        ],
+        "*.{js, jsx, json, html, css}": [
+          "npm run format"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "jest": {
+        "collectCoverageFrom": [
+          "src/**/*.js"
+        ]
+      },
+      "browserslist": {
+        "development": [
+          "last 2 chrome versions",
+          "last 2 firefox versions",
+          "last 2 edge versions"
+        ],
+        "production": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 11"
+        ]
+      }
+    },
+    "prefix": "/home/workspace/reactjs/coding-practices/events"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/home/workspace/.pnpm-store/v3",
+    "virtualStoreDir": "/home/workspace/reactjs/coding-practices/events/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/home/workspace/reactjs/coding-practices/events",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-prettier/8.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-config-prettier",
+      "rawSpec": "8.1.0"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-prettier/8.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-prettier/3.3.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-plugin-prettier",
+      "rawSpec": "3.3.1"
+    }
+  },
+  "7 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-prettier/3.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/husky/4.3.8",
+    "wanted": {
+      "dependentId": ".",
+      "name": "husky",
+      "rawSpec": "4.3.8"
+    }
+  },
+  "9 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/husky/4.3.8",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lint-staged/10.5.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "lint-staged",
+      "rawSpec": "10.5.4"
+    }
+  },
+  "11 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lint-staged/10.5.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "12 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/npm-run-all/4.1.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "npm-run-all",
+      "rawSpec": "4.1.5"
+    }
+  },
+  "13 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/npm-run-all/4.1.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "14 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prettier/2.2.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "prettier",
+      "rawSpec": "2.2.1"
+    }
+  },
+  "15 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier/2.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "16 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-scripts/4.0.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-scripts",
+      "rawSpec": "4.0.3"
+    }
+  },
+  "17 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-scripts/4.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "18 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-airbnb/18.2.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-config-airbnb",
+      "rawSpec": "18.2.1"
+    }
+  },
+  "19 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-airbnb/18.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "20 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/jest-dom/5.11.9",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/jest-dom",
+      "rawSpec": "5.11.9"
+    }
+  },
+  "21 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/jest-dom/5.11.9",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "22 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/react/11.2.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/react",
+      "rawSpec": "11.2.5"
+    }
+  },
+  "23 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/react/11.2.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "24 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/user-event/12.6.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/user-event",
+      "rawSpec": "12.6.2"
+    }
+  },
+  "25 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/user-event/12.6.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "26 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/4.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "chalk",
+      "rawSpec": "4.1.0"
+    }
+  },
+  "27 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/4.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "28 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react/17.0.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react",
+      "rawSpec": "17.0.1"
+    }
+  },
+  "29 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react/17.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "30 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-dom/17.0.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-dom",
+      "rawSpec": "17.0.1"
+    }
+  },
+  "31 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dom/17.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "32 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-prettier/8.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "33 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-prettier/3.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "34 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/husky/4.3.8",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "35 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lint-staged/10.5.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "36 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/npm-run-all/4.1.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "37 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier/2.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "38 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-scripts/4.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "39 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-airbnb/18.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "40 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/jest-dom/5.11.9",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "41 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/react/11.2.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "42 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/user-event/12.6.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "43 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/4.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "44 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react/17.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "45 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dom/17.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "46 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/which-pm-runs/1.1.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "which-pm-runs",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "47 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/which-pm-runs/1.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "48 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/which-pm-runs/1.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "49 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/compare-versions/3.6.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "compare-versions",
+      "rawSpec": "^3.6.0"
+    }
+  },
+  "50 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/compare-versions/3.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "51 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/compare-versions/3.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "52 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/dedent/0.7.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "dedent",
+      "rawSpec": "^0.7.0"
+    }
+  },
+  "53 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dedent/0.7.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "54 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dedent/0.7.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "55 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/prettier-linter-helpers"
+  },
+  "56 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/chalk"
+  },
+  "57 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/commander"
+  },
+  "58 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/slash"
+  },
+  "59 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/ci-info"
+  },
+  "60 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/find-versions"
+  },
+  "61 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/pkg-dir"
+  },
+  "62 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/please-upgrade-node"
+  },
+  "63 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/opencollective-postinstall"
+  },
+  "64 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/debug"
+  },
+  "65 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/cosmiconfig"
+  },
+  "66 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/cli-truncate"
+  },
+  "67 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/enquirer/2.4.1",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "enquirer",
+      "rawSpec": "^2.3.6"
+    }
+  },
+  "68 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/enquirer/2.4.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "69 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/enquirer/2.4.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "70 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/execa/4.1.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "execa",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "71 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/execa/4.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "72 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/execa/4.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "73 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/log-symbols/4.1.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "log-symbols",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "74 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/log-symbols/4.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "75 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/log-symbols/4.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "76 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/listr2/3.14.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "listr2",
+      "rawSpec": "^3.2.2"
+    }
+  },
+  "77 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/listr2/3.14.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "78 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/listr2/3.14.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "79 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/normalize-path/3.0.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "normalize-path",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "80 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/normalize-path/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "81 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/normalize-path/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "82 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/micromatch/4.0.5",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "micromatch",
+      "rawSpec": "^4.0.2"
+    }
+  },
+  "83 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/micromatch/4.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "84 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/string-argv/0.3.1",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "string-argv",
+      "rawSpec": "0.3.1"
+    }
+  },
+  "85 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string-argv/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "86 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/micromatch/4.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "87 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string-argv/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "88 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cli-truncate/2.1.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "cli-truncate",
+      "rawSpec": "^2.1.0"
+    }
+  },
+  "89 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cli-truncate/2.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "90 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cli-truncate/2.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "91 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/please-upgrade-node/3.2.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "please-upgrade-node",
+      "rawSpec": "^3.2.0"
+    }
+  },
+  "92 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/please-upgrade-node/3.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "93 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/please-upgrade-node/3.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "94 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/stringify-object/3.3.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "stringify-object",
+      "rawSpec": "^3.3.0"
+    }
+  },
+  "95 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/stringify-object/3.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "96 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/stringify-object/3.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "97 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-styles/3.2.1",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "ansi-styles",
+      "rawSpec": "^3.2.1"
+    }
+  },
+  "98 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-styles/3.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "99 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-styles/3.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "100 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cross-spawn/6.0.5",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "cross-spawn",
+      "rawSpec": "^6.0.5"
+    }
+  },
+  "101 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cross-spawn/6.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "102 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cross-spawn/6.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "103 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/memorystream/0.3.1",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "memorystream",
+      "rawSpec": "^0.3.1"
+    }
+  },
+  "104 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/memorystream/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "105 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/memorystream/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "106 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/opencollective-postinstall/2.0.3",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "opencollective-postinstall",
+      "rawSpec": "^2.0.2"
+    }
+  },
+  "107 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/opencollective-postinstall/2.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "108 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/opencollective-postinstall/2.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "109 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/2.4.2",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "chalk",
+      "rawSpec": "^2.4.1"
+    }
+  },
+  "110 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/2.4.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "111 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/2.4.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "112 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/chalk"
+  },
+  "113 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/please-upgrade-node"
+  },
+  "114 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/commander"
+  },
+  "115 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/ci-info"
+  },
+  "116 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/prettier-linter-helpers"
+  },
+  "117 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/slash"
+  },
+  "118 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/debug"
+  },
+  "119 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/pkg-dir"
+  },
+  "120 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/minimatch/3.1.2",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "minimatch",
+      "rawSpec": "^3.0.4"
+    }
+  },
+  "121 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/minimatch/3.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "122 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/minimatch/3.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "123 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/read-pkg/3.0.0",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "read-pkg",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "124 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/read-pkg/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "125 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/read-pkg/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "126 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/pidtree/0.3.1",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "pidtree",
+      "rawSpec": "^0.3.0"
+    }
+  },
+  "127 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pidtree/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "128 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/core/7.12.3",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "@babel/core",
+      "rawSpec": "7.12.3"
+    }
+  },
+  "129 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/core/7.12.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "130 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pidtree/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "131 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@pmmmwh/react-refresh-webpack-plugin/0.4.3",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "@pmmmwh/react-refresh-webpack-plugin",
+      "rawSpec": "0.4.3"
+    }
+  },
+  "132 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@pmmmwh/react-refresh-webpack-plugin/0.4.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "133 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@svgr/webpack/5.5.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "@svgr/webpack",
+      "rawSpec": "5.5.0"
+    }
+  },
+  "134 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@svgr/webpack/5.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "135 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/core/7.12.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "136 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@pmmmwh/react-refresh-webpack-plugin/0.4.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "137 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@svgr/webpack/5.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "138 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/shell-quote/1.8.1",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "shell-quote",
+      "rawSpec": "^1.6.1"
+    }
+  },
+  "139 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shell-quote/1.8.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "140 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shell-quote/1.8.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "141 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/string.prototype.padend/3.1.5",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "string.prototype.padend",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "142 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string.prototype.padend/3.1.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "143 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string.prototype.padend/3.1.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "144 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cosmiconfig/7.1.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "cosmiconfig",
+      "rawSpec": "^7.0.0"
+    }
+  },
+  "145 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cosmiconfig/7.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "146 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cosmiconfig/7.1.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "cosmiconfig",
+      "rawSpec": "^7.0.0"
+    }
+  },
+  "147 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-loader/8.1.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "babel-loader",
+      "rawSpec": "8.1.0"
+    }
+  },
+  "148 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-loader/8.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "149 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cosmiconfig/7.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "150 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-loader/8.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "151 warn pnpm:install-check": {
+    "message": "Unsupported platform for registry.npmjs.org/fsevents/2.3.3: wanted {\"cpu\":[\"any\"],\"os\":[\"darwin\"]} (current: {\"os\":\"linux\",\"cpu\":\"x64\"})",
+    "prefix": "/home/workspace/reactjs/coding-practices/events"
+  },
+  "152 debug pnpm:skipped-optional-dependency": {
+    "details": "Error: Unsupported platform for registry.npmjs.org/fsevents/2.3.3: wanted {\"cpu\":[\"any\"],\"os\":[\"darwin\"]} (current: {\"os\":\"linux\",\"cpu\":\"x64\"})",
+    "package": {
+      "id": "registry.npmjs.org/fsevents/2.3.3",
+      "name": "fsevents",
+      "version": "2.3.3"
+    },
+    "prefix": "/home/workspace/reactjs/coding-practices/events",
+    "reason": "unsupported_platform"
+  },
+  "153 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fsevents/2.3.3",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "fsevents",
+      "rawSpec": "^2.1.3"
+    }
+  },
+  "154 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fsevents/2.3.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "155 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/find-versions"
+  },
+  "156 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-eslint/10.1.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "babel-eslint",
+      "rawSpec": "^10.1.0"
+    }
+  },
+  "157 debug pnpm:deprecation": {
+    "deprecated": "babel-eslint is now @babel/eslint-parser. This package will no longer receive updates.",
+    "depth": 1,
+    "pkgId": "registry.npmjs.org/babel-eslint/10.1.0",
+    "pkgName": "babel-eslint",
+    "pkgVersion": "10.1.0",
+    "prefix": "/home/workspace/reactjs/coding-practices/events"
+  },
+  "158 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-eslint/10.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "159 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-eslint/10.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "160 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-jest/26.6.3",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "babel-jest",
+      "rawSpec": "^26.6.0"
+    }
+  },
+  "161 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-jest/26.6.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "162 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-jest/26.6.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "163 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-preset-react-app/10.0.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "babel-preset-react-app",
+      "rawSpec": "^10.0.0"
+    }
+  },
+  "164 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-preset-react-app/10.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "165 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/case-sensitive-paths-webpack-plugin/2.3.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "case-sensitive-paths-webpack-plugin",
+      "rawSpec": "2.3.0"
+    }
+  },
+  "166 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/case-sensitive-paths-webpack-plugin/2.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "167 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/css-loader/4.3.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "css-loader",
+      "rawSpec": "4.3.0"
+    }
+  },
+  "168 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css-loader/4.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "169 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-preset-react-app/10.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "170 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/dotenv/8.2.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "dotenv",
+      "rawSpec": "8.2.0"
+    }
+  },
+  "171 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dotenv/8.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "172 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/case-sensitive-paths-webpack-plugin/2.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "173 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/dotenv-expand/5.1.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "dotenv-expand",
+      "rawSpec": "5.1.0"
+    }
+  },
+  "174 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dotenv-expand/5.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "175 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css-loader/4.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "176 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dotenv/8.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "177 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dotenv-expand/5.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "178 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/bfj/7.1.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "bfj",
+      "rawSpec": "^7.0.2"
+    }
+  },
+  "179 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/bfj/7.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "180 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/bfj/7.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "181 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/camelcase/6.3.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "camelcase",
+      "rawSpec": "^6.1.0"
+    }
+  },
+  "182 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/camelcase/6.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "183 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/camelcase/6.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "184 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-react-app/6.0.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint-config-react-app",
+      "rawSpec": "^6.0.0"
+    }
+  },
+  "185 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-react-app/6.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "186 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-react-app/6.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "187 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-flowtype/5.10.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint-plugin-flowtype",
+      "rawSpec": "^5.2.0"
+    }
+  },
+  "188 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-flowtype/5.10.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "189 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-flowtype/5.10.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "190 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint/7.32.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint",
+      "rawSpec": "^7.11.0"
+    }
+  },
+  "191 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint/7.32.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "192 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint/7.32.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "193 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-import/2.29.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint-plugin-import",
+      "rawSpec": "^2.22.1"
+    }
+  },
+  "194 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-import/2.29.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "195 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-import/2.29.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "196 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-plugin-named-asset-import/0.3.8",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "babel-plugin-named-asset-import",
+      "rawSpec": "^0.3.7"
+    }
+  },
+  "197 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-named-asset-import/0.3.8",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "198 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-named-asset-import/0.3.8",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "199 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-jsx-a11y/6.8.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint-plugin-jsx-a11y",
+      "rawSpec": "^6.3.1"
+    }
+  },
+  "200 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-jsx-a11y/6.8.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "201 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-jsx-a11y/6.8.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "202 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-react/7.33.2",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint-plugin-react",
+      "rawSpec": "^7.21.5"
+    }
+  },
+  "203 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-react/7.33.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "204 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-react/7.33.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "205 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-testing-library/3.10.2",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint-plugin-testing-library",
+      "rawSpec": "^3.9.2"
+    }
+  },
+  "206 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-testing-library/3.10.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "207 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/file-loader/6.1.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "file-loader",
+      "rawSpec": "6.1.1"
+    }
+  },
+  "208 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/file-loader/6.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "209 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-testing-library/3.10.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "210 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/file-loader/6.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "211 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-jest/24.7.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint-plugin-jest",
+      "rawSpec": "^24.1.0"
+    }
+  },
+  "212 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-jest/24.7.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "213 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/html-webpack-plugin/4.5.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "html-webpack-plugin",
+      "rawSpec": "4.5.0"
+    }
+  },
+  "214 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/html-webpack-plugin/4.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "215 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/identity-obj-proxy/3.0.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "identity-obj-proxy",
+      "rawSpec": "3.0.0"
+    }
+  },
+  "216 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/identity-obj-proxy/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "217 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-jest/24.7.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "218 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/html-webpack-plugin/4.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "219 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/jest/26.6.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "jest",
+      "rawSpec": "26.6.0"
+    }
+  },
+  "220 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest/26.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "221 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/identity-obj-proxy/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "222 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/jest-circus/26.6.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "jest-circus",
+      "rawSpec": "26.6.0"
+    }
+  },
+  "223 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest-circus/26.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "224 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/jest-resolve/26.6.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "jest-resolve",
+      "rawSpec": "26.6.0"
+    }
+  },
+  "225 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest-resolve/26.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "226 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest/26.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "227 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/jest-watch-typeahead/0.6.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "jest-watch-typeahead",
+      "rawSpec": "0.6.1"
+    }
+  },
+  "228 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest-watch-typeahead/0.6.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "229 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest-circus/26.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "230 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest-resolve/26.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "231 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/mini-css-extract-plugin/0.11.3",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "mini-css-extract-plugin",
+      "rawSpec": "0.11.3"
+    }
+  },
+  "232 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mini-css-extract-plugin/0.11.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "233 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest-watch-typeahead/0.6.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "234 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/optimize-css-assets-webpack-plugin/5.0.4",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "optimize-css-assets-webpack-plugin",
+      "rawSpec": "5.0.4"
+    }
+  },
+  "235 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/optimize-css-assets-webpack-plugin/5.0.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "236 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/pnp-webpack-plugin/1.6.4",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "pnp-webpack-plugin",
+      "rawSpec": "1.6.4"
+    }
+  },
+  "237 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pnp-webpack-plugin/1.6.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "238 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mini-css-extract-plugin/0.11.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "239 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/postcss-flexbugs-fixes/4.2.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "postcss-flexbugs-fixes",
+      "rawSpec": "4.2.1"
+    }
+  },
+  "240 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-flexbugs-fixes/4.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "241 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/optimize-css-assets-webpack-plugin/5.0.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "242 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/postcss-loader/3.0.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "postcss-loader",
+      "rawSpec": "3.0.0"
+    }
+  },
+  "243 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-loader/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "244 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pnp-webpack-plugin/1.6.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "245 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-flexbugs-fixes/4.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "246 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/postcss-normalize/8.0.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "postcss-normalize",
+      "rawSpec": "8.0.1"
+    }
+  },
+  "247 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-normalize/8.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "248 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-loader/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "249 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/postcss-preset-env/6.7.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "postcss-preset-env",
+      "rawSpec": "6.7.0"
+    }
+  },
+  "250 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-preset-env/6.7.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "251 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-normalize/8.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "252 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/postcss-safe-parser/5.0.2",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "postcss-safe-parser",
+      "rawSpec": "5.0.2"
+    }
+  },
+  "253 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-safe-parser/5.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "254 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prompts/2.4.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "prompts",
+      "rawSpec": "2.4.0"
+    }
+  },
+  "255 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prompts/2.4.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "256 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-preset-env/6.7.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "257 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-safe-parser/5.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "258 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prompts/2.4.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "259 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fs-extra/9.1.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "fs-extra",
+      "rawSpec": "^9.0.1"
+    }
+  },
+  "260 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fs-extra/9.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "261 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fs-extra/9.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "262 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-dev-utils/11.0.4",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "react-dev-utils",
+      "rawSpec": "^11.0.3"
+    }
+  },
+  "263 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dev-utils/11.0.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "264 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dev-utils/11.0.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "265 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-app-polyfill/2.0.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "react-app-polyfill",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "266 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-app-polyfill/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "267 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/resolve/1.18.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "resolve",
+      "rawSpec": "1.18.1"
+    }
+  },
+  "268 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/resolve/1.18.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "269 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-app-polyfill/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "270 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/resolve/1.18.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "271 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/resolve-url-loader/3.1.5",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "resolve-url-loader",
+      "rawSpec": "^3.1.2"
+    }
+  },
+  "272 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/resolve-url-loader/3.1.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "273 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/resolve-url-loader/3.1.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "274 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ci-info/2.0.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "ci-info",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "275 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ci-info/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "276 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/semver/7.3.2",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "semver",
+      "rawSpec": "7.3.2"
+    }
+  },
+  "277 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver/7.3.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "278 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/style-loader/1.3.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "style-loader",
+      "rawSpec": "1.3.0"
+    }
+  },
+  "279 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/style-loader/1.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "280 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ci-info/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "281 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/terser-webpack-plugin/4.2.3",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "terser-webpack-plugin",
+      "rawSpec": "4.2.3"
+    }
+  },
+  "282 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/terser-webpack-plugin/4.2.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "283 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver/7.3.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "284 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ts-pnp/1.2.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "ts-pnp",
+      "rawSpec": "1.2.0"
+    }
+  },
+  "285 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ts-pnp/1.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "286 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/style-loader/1.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "287 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/url-loader/4.1.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "url-loader",
+      "rawSpec": "4.1.1"
+    }
+  },
+  "288 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/url-loader/4.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "289 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/terser-webpack-plugin/4.2.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "290 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ts-pnp/1.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "291 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/url-loader/4.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "292 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/please-upgrade-node/3.2.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "please-upgrade-node",
+      "rawSpec": "^3.2.0"
+    }
+  },
+  "293 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/webpack-dev-server/3.11.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "webpack-dev-server",
+      "rawSpec": "3.11.1"
+    }
+  },
+  "294 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/webpack-dev-server/3.11.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "295 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/webpack-manifest-plugin/2.2.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "webpack-manifest-plugin",
+      "rawSpec": "2.2.0"
+    }
+  },
+  "296 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/webpack-manifest-plugin/2.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "297 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/workbox-webpack-plugin/5.1.4",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "workbox-webpack-plugin",
+      "rawSpec": "5.1.4"
+    }
+  },
+  "298 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/workbox-webpack-plugin/5.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "299 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/webpack-dev-server/3.11.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "300 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/webpack-manifest-plugin/2.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "301 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/workbox-webpack-plugin/5.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "302 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/sass-loader/10.4.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "sass-loader",
+      "rawSpec": "^10.0.5"
+    }
+  },
+  "303 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sass-loader/10.4.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "304 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sass-loader/10.4.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "305 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/slash/3.0.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "slash",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "306 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/slash/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "307 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/slash/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "308 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/pkg-dir/5.0.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "pkg-dir",
+      "rawSpec": "^5.0.0"
+    }
+  },
+  "309 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pkg-dir/5.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "310 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pkg-dir/5.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "311 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-airbnb-base/14.2.1",
+    "wanted": {
+      "dependentId": "/eslint-config-airbnb/18.2.1",
+      "name": "eslint-config-airbnb-base",
+      "rawSpec": "^14.2.1"
+    }
+  },
+  "312 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-airbnb-base/14.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "313 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-airbnb-base/14.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "314 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prettier-linter-helpers/1.0.0",
+    "wanted": {
+      "dependentId": "/eslint-plugin-prettier/3.3.1",
+      "name": "prettier-linter-helpers",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "315 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier-linter-helpers/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "316 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier-linter-helpers/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "317 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object.entries/1.1.7",
+    "wanted": {
+      "dependentId": "/eslint-config-airbnb/18.2.1",
+      "name": "object.entries",
+      "rawSpec": "^1.1.2"
+    }
+  },
+  "318 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object.entries/1.1.7",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "319 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/3.0.0",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "chalk",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "320 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "321 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object.entries/1.1.7",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "322 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "323 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object.assign/4.1.4",
+    "wanted": {
+      "dependentId": "/eslint-config-airbnb/18.2.1",
+      "name": "object.assign",
+      "rawSpec": "^4.1.2"
+    }
+  },
+  "324 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object.assign/4.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "325 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object.assign/4.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "326 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/find-versions/4.0.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "find-versions",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "327 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/find-versions/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "328 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/find-versions/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "329 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/commander/6.2.1",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "commander",
+      "rawSpec": "^6.2.0"
+    }
+  },
+  "330 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/commander/6.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "331 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/commander/6.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "332 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/4.1.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "chalk",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "333 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/4.1.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "chalk",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "334 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/testing-library__jest-dom/5.14.9",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "@types/testing-library__jest-dom",
+      "rawSpec": "^5.9.1"
+    }
+  },
+  "335 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/testing-library__jest-dom/5.14.9",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "336 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/testing-library__jest-dom/5.14.9",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "337 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/debug/4.3.4",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "debug",
+      "rawSpec": "^4.2.0"
+    }
+  },
+  "338 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/debug/4.3.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "339 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-styles/4.3.0",
+    "wanted": {
+      "dependentId": "/chalk/4.1.0",
+      "name": "ansi-styles",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "340 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-styles/4.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "341 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/debug/4.3.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "342 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-styles/4.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "343 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/redent/3.0.0",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "redent",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "344 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/redent/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "345 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/redent/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "346 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/aria-query/4.2.2",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "aria-query",
+      "rawSpec": "^4.2.2"
+    }
+  },
+  "347 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/aria-query/4.2.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "348 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/aria-query/4.2.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "349 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/loose-envify/1.4.0",
+    "wanted": {
+      "dependentId": "/react/17.0.1",
+      "name": "loose-envify",
+      "rawSpec": "^1.1.0"
+    }
+  },
+  "350 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/loose-envify/1.4.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "351 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/loose-envify/1.4.0",
+    "wanted": {
+      "dependentId": "/react-dom/17.0.1",
+      "name": "loose-envify",
+      "rawSpec": "^1.1.0"
+    }
+  },
+  "352 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/loose-envify/1.4.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "353 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object-assign/4.1.1",
+    "wanted": {
+      "dependentId": "/react/17.0.1",
+      "name": "object-assign",
+      "rawSpec": "^4.1.1"
+    }
+  },
+  "354 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object-assign/4.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "355 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object-assign/4.1.1",
+    "wanted": {
+      "dependentId": "/react-dom/17.0.1",
+      "name": "object-assign",
+      "rawSpec": "^4.1.1"
+    }
+  },
+  "356 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object-assign/4.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "357 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/css.escape/1.5.1",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "css.escape",
+      "rawSpec": "^1.5.1"
+    }
+  },
+  "358 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css.escape/1.5.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "359 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css.escape/1.5.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "360 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/supports-color/7.2.0",
+    "wanted": {
+      "dependentId": "/chalk/4.1.0",
+      "name": "supports-color",
+      "rawSpec": "^7.1.0"
+    }
+  },
+  "361 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/supports-color/7.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "362 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/supports-color/7.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "363 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/css/3.0.0",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "css",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "364 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "365 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "366 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/color-convert/1.9.3",
+    "wanted": {
+      "dependentId": "/ansi-styles/3.2.1",
+      "name": "color-convert",
+      "rawSpec": "^1.9.0"
+    }
+  },
+  "367 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/color-convert/1.9.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "368 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/color-convert/1.9.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "369 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lodash/4.17.21",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "lodash",
+      "rawSpec": "^4.17.15"
+    }
+  },
+  "370 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lodash/4.17.21",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "371 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lodash/4.17.21",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "372 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_SOCKET_TIMEOUT",
+      "code": "ERR_SOCKET_TIMEOUT"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/eslint-webpack-plugin"
+  },
+  "373 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/path-key/2.0.1",
+    "wanted": {
+      "dependentId": "/cross-spawn/6.0.5",
+      "name": "path-key",
+      "rawSpec": "^2.0.1"
+    }
+  },
+  "374 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-key/2.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "375 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-styles/3.2.1",
+    "wanted": {
+      "dependentId": "/chalk/2.4.2",
+      "name": "ansi-styles",
+      "rawSpec": "^3.2.1"
+    }
+  },
+  "376 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-key/2.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "377 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/nice-try/1.0.5",
+    "wanted": {
+      "dependentId": "/cross-spawn/6.0.5",
+      "name": "nice-try",
+      "rawSpec": "^1.0.4"
+    }
+  },
+  "378 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/nice-try/1.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "379 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/supports-color/5.5.0",
+    "wanted": {
+      "dependentId": "/chalk/2.4.2",
+      "name": "supports-color",
+      "rawSpec": "^5.3.0"
+    }
+  },
+  "380 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/supports-color/5.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "381 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/supports-color/5.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "382 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/nice-try/1.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "383 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/shebang-command/1.2.0",
+    "wanted": {
+      "dependentId": "/cross-spawn/6.0.5",
+      "name": "shebang-command",
+      "rawSpec": "^1.2.0"
+    }
+  },
+  "384 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shebang-command/1.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "385 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shebang-command/1.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "386 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/which/1.3.1",
+    "wanted": {
+      "dependentId": "/cross-spawn/6.0.5",
+      "name": "which",
+      "rawSpec": "^1.2.9"
+    }
+  },
+  "387 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/which/1.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "388 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/which/1.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "389 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/escape-string-regexp/1.0.5",
+    "wanted": {
+      "dependentId": "/chalk/2.4.2",
+      "name": "escape-string-regexp",
+      "rawSpec": "^1.0.5"
+    }
+  },
+  "390 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/escape-string-regexp/1.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "391 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/escape-string-regexp/1.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "392 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/brace-expansion/1.1.11",
+    "wanted": {
+      "dependentId": "/minimatch/3.1.2",
+      "name": "brace-expansion",
+      "rawSpec": "^1.1.7"
+    }
+  },
+  "393 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/brace-expansion/1.1.11",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "394 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/brace-expansion/1.1.11",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "395 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/runtime/7.23.2",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "@babel/runtime",
+      "rawSpec": "^7.9.2"
+    }
+  },
+  "396 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/runtime/7.23.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "397 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/runtime/7.23.2",
+    "wanted": {
+      "dependentId": "/@testing-library/react/11.2.5",
+      "name": "@babel/runtime",
+      "rawSpec": "^7.12.5"
+    }
+  },
+  "398 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/runtime/7.23.2",
+    "wanted": {
+      "dependentId": "/@testing-library/user-event/12.6.2",
+      "name": "@babel/runtime",
+      "rawSpec": "^7.12.5"
+    }
+  },
+  "399 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/runtime/7.23.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "400 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/semver/5.7.2",
+    "wanted": {
+      "dependentId": "/cross-spawn/6.0.5",
+      "name": "semver",
+      "rawSpec": "^5.5.0"
+    }
+  },
+  "401 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver/5.7.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "402 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver/5.7.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "403 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/confusing-browser-globals/1.0.11",
+    "wanted": {
+      "dependentId": "/eslint-config-airbnb-base/14.2.1",
+      "name": "confusing-browser-globals",
+      "rawSpec": "^1.0.10"
+    }
+  },
+  "404 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/confusing-browser-globals/1.0.11",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "405 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object.assign/4.1.4",
+    "wanted": {
+      "dependentId": "/eslint-config-airbnb-base/14.2.1",
+      "name": "object.assign",
+      "rawSpec": "^4.1.2"
+    }
+  },
+  "406 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object.entries/1.1.7",
+    "wanted": {
+      "dependentId": "/eslint-config-airbnb-base/14.2.1",
+      "name": "object.entries",
+      "rawSpec": "^1.1.2"
+    }
+  },
+  "407 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/confusing-browser-globals/1.0.11",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "408 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/fast-diff"
+  },
+  "409 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/es-abstract"
+  },
+  "410 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/path-type/3.0.0",
+    "wanted": {
+      "dependentId": "/read-pkg/3.0.0",
+      "name": "path-type",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "411 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-type/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "412 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-type/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "413 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/define-properties/1.2.1",
+    "wanted": {
+      "dependentId": "/string.prototype.padend/3.1.5",
+      "name": "define-properties",
+      "rawSpec": "^1.2.0"
+    }
+  },
+  "414 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/define-properties/1.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "415 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/define-properties/1.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "416 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/load-json-file/4.0.0",
+    "wanted": {
+      "dependentId": "/read-pkg/3.0.0",
+      "name": "load-json-file",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "417 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/load-json-file/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "418 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/load-json-file/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "419 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/dom/7.31.2",
+    "wanted": {
+      "dependentId": "/@testing-library/react/11.2.5",
+      "name": "@testing-library/dom",
+      "rawSpec": "^7.28.1"
+    }
+  },
+  "420 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/dom/7.31.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "421 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/define-properties/1.2.1",
+    "wanted": {
+      "dependentId": "/object.assign/4.1.4",
+      "name": "define-properties",
+      "rawSpec": "^1.1.4"
+    }
+  },
+  "422 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/dom/7.31.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "423 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/normalize-package-data/2.5.0",
+    "wanted": {
+      "dependentId": "/read-pkg/3.0.0",
+      "name": "normalize-package-data",
+      "rawSpec": "^2.3.2"
+    }
+  },
+  "424 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/normalize-package-data/2.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "425 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/normalize-package-data/2.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "426 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/call-bind/1.0.5",
+    "wanted": {
+      "dependentId": "/object.entries/1.1.7",
+      "name": "call-bind",
+      "rawSpec": "^1.0.2"
+    }
+  },
+  "427 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/call-bind/1.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "428 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/call-bind/1.0.5",
+    "wanted": {
+      "dependentId": "/object.assign/4.1.4",
+      "name": "call-bind",
+      "rawSpec": "^1.0.2"
+    }
+  },
+  "429 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/call-bind/1.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "430 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-webpack-plugin/2.7.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint-webpack-plugin",
+      "rawSpec": "^2.5.2"
+    }
+  },
+  "431 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-webpack-plugin/2.7.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "432 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-webpack-plugin/2.7.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "433 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/define-properties/1.2.1",
+    "wanted": {
+      "dependentId": "/object.entries/1.1.7",
+      "name": "define-properties",
+      "rawSpec": "^1.2.0"
+    }
+  },
+  "434 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/path-type/4.0.0",
+    "wanted": {
+      "dependentId": "/cosmiconfig/7.1.0",
+      "name": "path-type",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "435 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-type/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "436 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-type/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "437 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/has-symbols/1.0.3",
+    "wanted": {
+      "dependentId": "/object.assign/4.1.4",
+      "name": "has-symbols",
+      "rawSpec": "^1.0.3"
+    }
+  },
+  "438 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-symbols/1.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "439 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-symbols/1.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "440 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object-keys/1.1.1",
+    "wanted": {
+      "dependentId": "/object.assign/4.1.4",
+      "name": "object-keys",
+      "rawSpec": "^1.1.1"
+    }
+  },
+  "441 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object-keys/1.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "442 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object-keys/1.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "443 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/import-fresh/3.3.0",
+    "wanted": {
+      "dependentId": "/cosmiconfig/7.1.0",
+      "name": "import-fresh",
+      "rawSpec": "^3.2.1"
+    }
+  },
+  "444 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/import-fresh/3.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "445 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/import-fresh/3.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "446 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/parse-json/4.0.1",
+    "wanted": {
+      "dependentId": "/cosmiconfig/7.1.0",
+      "name": "@types/parse-json",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "447 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/parse-json/4.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "448 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/parse-json/4.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "449 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/parse-json/5.2.0",
+    "wanted": {
+      "dependentId": "/cosmiconfig/7.1.0",
+      "name": "parse-json",
+      "rawSpec": "^5.0.0"
+    }
+  },
+  "450 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/parse-json/5.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "451 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/parse-json/5.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "452 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/es-abstract/1.22.3",
+    "wanted": {
+      "dependentId": "/object.entries/1.1.7",
+      "name": "es-abstract",
+      "rawSpec": "^1.22.1"
+    }
+  },
+  "453 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/es-abstract/1.22.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "454 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/es-abstract/1.22.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "455 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/semver-regex/3.1.4",
+    "wanted": {
+      "dependentId": "/find-versions/4.0.0",
+      "name": "semver-regex",
+      "rawSpec": "^3.1.2"
+    }
+  },
+  "456 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver-regex/3.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "457 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver-regex/3.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "458 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/strip-ansi/6.0.1",
+    "wanted": {
+      "dependentId": "/enquirer/2.4.1",
+      "name": "strip-ansi",
+      "rawSpec": "^6.0.1"
+    }
+  },
+  "459 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-ansi/6.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "460 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-ansi/6.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "461 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cross-spawn/7.0.3",
+    "wanted": {
+      "dependentId": "/execa/4.1.0",
+      "name": "cross-spawn",
+      "rawSpec": "^7.0.0"
+    }
+  },
+  "462 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cross-spawn/7.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "463 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cross-spawn/7.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "464 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/webpack/4.44.2",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "webpack",
+      "rawSpec": "4.44.2"
+    }
+  },
+  "465 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/webpack/4.44.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "466 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/webpack/4.44.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "467 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/get-stream/5.2.0",
+    "wanted": {
+      "dependentId": "/execa/4.1.0",
+      "name": "get-stream",
+      "rawSpec": "^5.0.0"
+    }
+  },
+  "468 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/get-stream/5.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "469 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/get-stream/5.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "470 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-colors/4.1.3",
+    "wanted": {
+      "dependentId": "/enquirer/2.4.1",
+      "name": "ansi-colors",
+      "rawSpec": "^4.1.1"
+    }
+  },
+  "471 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-colors/4.1.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "472 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-colors/4.1.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "473 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/find-up/5.0.0",
+    "wanted": {
+      "dependentId": "/pkg-dir/5.0.0",
+      "name": "find-up",
+      "rawSpec": "^5.0.0"
+    }
+  },
+  "474 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/find-up/5.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "475 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/find-up/5.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "476 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/human-signals/1.1.1",
+    "wanted": {
+      "dependentId": "/execa/4.1.0",
+      "name": "human-signals",
+      "rawSpec": "^1.1.1"
+    }
+  },
+  "477 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/human-signals/1.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "478 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/4.1.0",
+    "wanted": {
+      "dependentId": "/log-symbols/4.1.0",
+      "name": "chalk",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "479 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/human-signals/1.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "480 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-stream/2.0.1",
+    "wanted": {
+      "dependentId": "/execa/4.1.0",
+      "name": "is-stream",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "481 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-stream/2.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "482 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-stream/2.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "483 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/merge-stream/2.0.0",
+    "wanted": {
+      "dependentId": "/execa/4.1.0",
+      "name": "merge-stream",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "484 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/merge-stream/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "485 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/merge-stream/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "486 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/npm-run-path/4.0.1",
+    "wanted": {
+      "dependentId": "/execa/4.1.0",
+      "name": "npm-run-path",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "487 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/npm-run-path/4.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "488 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/npm-run-path/4.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "489 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/onetime/5.1.2",
+    "wanted": {
+      "dependentId": "/execa/4.1.0",
+      "name": "onetime",
+      "rawSpec": "^5.1.0"
+    }
+  },
+  "490 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/onetime/5.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "491 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/onetime/5.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "492 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/yaml/1.10.2",
+    "wanted": {
+      "dependentId": "/cosmiconfig/7.1.0",
+      "name": "yaml",
+      "rawSpec": "^1.10.0"
+    }
+  },
+  "493 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/yaml/1.10.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "494 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/yaml/1.10.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "495 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/fast-diff"
+  },
+  "496 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/es-abstract"
+  },
+  "497 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/signal-exit/3.0.7",
+    "wanted": {
+      "dependentId": "/execa/4.1.0",
+      "name": "signal-exit",
+      "rawSpec": "^3.0.2"
+    }
+  },
+  "498 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/signal-exit/3.0.7",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "499 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/signal-exit/3.0.7",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "500 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/p-map/4.0.0",
+    "wanted": {
+      "dependentId": "/listr2/3.14.0",
+      "name": "p-map",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "501 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/p-map/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "502 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/p-map/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "503 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_SOCKET_TIMEOUT",
+      "code": "ERR_SOCKET_TIMEOUT"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/call-bind"
+  },
+  "504 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/log-update/4.0.0",
+    "wanted": {
+      "dependentId": "/listr2/3.14.0",
+      "name": "log-update",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "505 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/log-update/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "506 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/log-update/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "507 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/colorette/2.0.20",
+    "wanted": {
+      "dependentId": "/listr2/3.14.0",
+      "name": "colorette",
+      "rawSpec": "^2.0.16"
+    }
+  },
+  "508 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/colorette/2.0.20",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "509 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/colorette/2.0.20",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "510 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/wrap-ansi/7.0.0",
+    "wanted": {
+      "dependentId": "/listr2/3.14.0",
+      "name": "wrap-ansi",
+      "rawSpec": "^7.0.0"
+    }
+  },
+  "511 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/wrap-ansi/7.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "512 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/wrap-ansi/7.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "513 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/braces/3.0.2",
+    "wanted": {
+      "dependentId": "/micromatch/4.0.5",
+      "name": "braces",
+      "rawSpec": "^3.0.2"
+    }
+  },
+  "514 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/braces/3.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "515 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/braces/3.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "516 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-unicode-supported/0.1.0",
+    "wanted": {
+      "dependentId": "/log-symbols/4.1.0",
+      "name": "is-unicode-supported",
+      "rawSpec": "^0.1.0"
+    }
+  },
+  "517 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-unicode-supported/0.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "518 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-unicode-supported/0.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "519 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/rfdc/1.3.0",
+    "wanted": {
+      "dependentId": "/listr2/3.14.0",
+      "name": "rfdc",
+      "rawSpec": "^1.3.0"
+    }
+  },
+  "520 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rfdc/1.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "521 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rfdc/1.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "522 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/string-width/4.2.3",
+    "wanted": {
+      "dependentId": "/cli-truncate/2.1.0",
+      "name": "string-width",
+      "rawSpec": "^4.2.0"
+    }
+  },
+  "523 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string-width/4.2.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "524 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string-width/4.2.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "525 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cli-truncate/2.1.0",
+    "wanted": {
+      "dependentId": "/listr2/3.14.0",
+      "name": "cli-truncate",
+      "rawSpec": "^2.1.0"
+    }
+  },
+  "526 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/semver-compare/1.0.0",
+    "wanted": {
+      "dependentId": "/please-upgrade-node/3.2.0",
+      "name": "semver-compare",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "527 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver-compare/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "528 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver-compare/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "529 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/get-own-enumerable-property-symbols/3.0.2",
+    "wanted": {
+      "dependentId": "/stringify-object/3.3.0",
+      "name": "get-own-enumerable-property-symbols",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "530 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/get-own-enumerable-property-symbols/3.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "531 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/get-own-enumerable-property-symbols/3.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "532 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/scheduler/0.20.2",
+    "wanted": {
+      "dependentId": "/react-dom/17.0.1",
+      "name": "scheduler",
+      "rawSpec": "^0.20.1"
+    }
+  },
+  "533 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/scheduler/0.20.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "534 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/picomatch/2.3.1",
+    "wanted": {
+      "dependentId": "/micromatch/4.0.5",
+      "name": "picomatch",
+      "rawSpec": "^2.3.1"
+    }
+  },
+  "535 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/picomatch/2.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "536 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/color-convert/2.0.1",
+    "wanted": {
+      "dependentId": "/ansi-styles/4.3.0",
+      "name": "color-convert",
+      "rawSpec": "^2.0.1"
+    }
+  },
+  "537 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/color-convert/2.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "538 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/scheduler/0.20.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "539 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/picomatch/2.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "540 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/color-convert/2.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "541 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-obj/1.0.1",
+    "wanted": {
+      "dependentId": "/stringify-object/3.3.0",
+      "name": "is-obj",
+      "rawSpec": "^1.0.1"
+    }
+  },
+  "542 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-obj/1.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "543 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-obj/1.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "544 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-regexp/1.0.0",
+    "wanted": {
+      "dependentId": "/stringify-object/3.3.0",
+      "name": "is-regexp",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "545 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-regexp/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "546 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/supports-color/7.2.0",
+    "wanted": {
+      "dependentId": "/chalk/3.0.0",
+      "name": "supports-color",
+      "rawSpec": "^7.1.0"
+    }
+  },
+  "547 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-regexp/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "548 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ms/2.1.2",
+    "wanted": {
+      "dependentId": "/debug/4.3.4",
+      "name": "ms",
+      "rawSpec": "2.1.2"
+    }
+  },
+  "549 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ms/2.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "550 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ms/2.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "551 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/call-bind/1.0.5",
+    "wanted": {
+      "dependentId": "/string.prototype.padend/3.1.5",
+      "name": "call-bind",
+      "rawSpec": "^1.0.2"
+    }
+  },
+  "552 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/js-tokens/4.0.0",
+    "wanted": {
+      "dependentId": "/loose-envify/1.4.0",
+      "name": "js-tokens",
+      "rawSpec": "^3.0.0 || ^4.0.0"
+    }
+  },
+  "553 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/js-tokens/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "554 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/runtime/7.23.2",
+    "wanted": {
+      "dependentId": "/aria-query/4.2.2",
+      "name": "@babel/runtime",
+      "rawSpec": "^7.10.2"
+    }
+  },
+  "555 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/js-tokens/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "556 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/has-flag/4.0.0",
+    "wanted": {
+      "dependentId": "/supports-color/7.2.0",
+      "name": "has-flag",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "557 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-flag/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "558 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-flag/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "559 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-styles/4.3.0",
+    "wanted": {
+      "dependentId": "/chalk/3.0.0",
+      "name": "ansi-styles",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "560 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/strip-indent/3.0.0",
+    "wanted": {
+      "dependentId": "/redent/3.0.0",
+      "name": "strip-indent",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "561 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-indent/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "562 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-indent/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "563 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/source-map/0.6.1",
+    "wanted": {
+      "dependentId": "/css/3.0.0",
+      "name": "source-map",
+      "rawSpec": "^0.6.1"
+    }
+  },
+  "564 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/source-map/0.6.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "565 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/source-map/0.6.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "566 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/inherits/2.0.4",
+    "wanted": {
+      "dependentId": "/css/3.0.0",
+      "name": "inherits",
+      "rawSpec": "^2.0.4"
+    }
+  },
+  "567 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/inherits/2.0.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "568 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/inherits/2.0.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "569 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/indent-string/4.0.0",
+    "wanted": {
+      "dependentId": "/redent/3.0.0",
+      "name": "indent-string",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "570 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/indent-string/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "571 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/runtime/7.23.2",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.2",
+      "name": "@babel/runtime",
+      "rawSpec": "^7.12.5"
+    }
+  },
+  "572 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/indent-string/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "573 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/jest/29.5.7",
+    "wanted": {
+      "dependentId": "/@types/testing-library__jest-dom/5.14.9",
+      "name": "@types/jest",
+      "rawSpec": "*"
+    }
+  },
+  "574 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/jest/29.5.7",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "575 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/aria-query/4.2.2",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.2",
+      "name": "aria-query",
+      "rawSpec": "^4.2.2"
+    }
+  },
+  "576 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/4.1.0",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.2",
+      "name": "chalk",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "577 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/jest/29.5.7",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "578 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/slice-ansi/3.0.0",
+    "wanted": {
+      "dependentId": "/cli-truncate/2.1.0",
+      "name": "slice-ansi",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "579 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/slice-ansi/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "580 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/slice-ansi/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "581 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/dom-accessibility-api/0.5.16",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.2",
+      "name": "dom-accessibility-api",
+      "rawSpec": "^0.5.6"
+    }
+  },
+  "582 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dom-accessibility-api/0.5.16",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "583 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dom-accessibility-api/0.5.16",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "584 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/regenerator-runtime/0.14.0",
+    "wanted": {
+      "dependentId": "/@babel/runtime/7.23.2",
+      "name": "regenerator-runtime",
+      "rawSpec": "^0.14.0"
+    }
+  },
+  "585 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/regenerator-runtime/0.14.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "586 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/loose-envify/1.4.0",
+    "wanted": {
+      "dependentId": "/scheduler/0.20.2",
+      "name": "loose-envify",
+      "rawSpec": "^1.1.0"
+    }
+  },
+  "587 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object-assign/4.1.1",
+    "wanted": {
+      "dependentId": "/scheduler/0.20.2",
+      "name": "object-assign",
+      "rawSpec": "^4.1.1"
+    }
+  },
+  "588 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/regenerator-runtime/0.14.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "589 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lz-string/1.5.0",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.2",
+      "name": "lz-string",
+      "rawSpec": "^1.4.4"
+    }
+  },
+  "590 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lz-string/1.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "591 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/has-flag/3.0.0",
+    "wanted": {
+      "dependentId": "/supports-color/5.5.0",
+      "name": "has-flag",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "592 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-flag/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "593 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-flag/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "594 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lz-string/1.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "595 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/aria-query/4.2.2",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.2",
+      "name": "@types/aria-query",
+      "rawSpec": "^4.2.0"
+    }
+  },
+  "596 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/aria-query/4.2.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "597 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/aria-query/4.2.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "598 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/through"
+  },
+  "599 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/strip-final-newline"
+  },
+  "600 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/rxjs"
+  },
+  "601 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/code-frame/7.22.13",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.2",
+      "name": "@babel/code-frame",
+      "rawSpec": "^7.10.4"
+    }
+  },
+  "602 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/code-frame/7.22.13",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "603 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/code-frame/7.22.13",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "604 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/shebang-regex/1.0.0",
+    "wanted": {
+      "dependentId": "/shebang-command/1.2.0",
+      "name": "shebang-regex",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "605 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shebang-regex/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "606 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shebang-regex/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "607 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/balanced-match/1.0.2",
+    "wanted": {
+      "dependentId": "/brace-expansion/1.1.11",
+      "name": "balanced-match",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "608 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/balanced-match/1.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "609 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/balanced-match/1.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "610 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/pretty-format/26.6.2",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.2",
+      "name": "pretty-format",
+      "rawSpec": "^26.6.2"
+    }
+  },
+  "611 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pretty-format/26.6.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "612 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pretty-format/26.6.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "613 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/source-map-resolve/0.6.0",
+    "wanted": {
+      "dependentId": "/css/3.0.0",
+      "name": "source-map-resolve",
+      "rawSpec": "^0.6.0"
+    }
+  },
+  "614 debug pnpm:deprecation": {
+    "deprecated": "See https://github.com/lydell/source-map-resolve#deprecated",
+    "depth": 2,
+    "pkgId": "registry.npmjs.org/source-map-resolve/0.6.0",
+    "pkgName": "source-map-resolve",
+    "pkgVersion": "0.6.0",
+    "prefix": "/home/workspace/reactjs/coding-practices/events"
+  },
+  "615 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/source-map-resolve/0.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "616 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/parse-json/4.0.0",
+    "wanted": {
+      "dependentId": "/load-json-file/4.0.0",
+      "name": "parse-json",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "617 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/parse-json/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "618 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/parse-json/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "619 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/source-map-resolve/0.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "620 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/isexe/2.0.0",
+    "wanted": {
+      "dependentId": "/which/1.3.1",
+      "name": "isexe",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "621 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/isexe/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "622 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/isexe/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "623 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/graceful-fs/4.2.11",
+    "wanted": {
+      "dependentId": "/load-json-file/4.0.0",
+      "name": "graceful-fs",
+      "rawSpec": "^4.1.2"
+    }
+  },
+  "624 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/graceful-fs/4.2.11",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "625 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/graceful-fs/4.2.11",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "626 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/pify/3.0.0",
+    "wanted": {
+      "dependentId": "/path-type/3.0.0",
+      "name": "pify",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "627 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pify/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "628 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/pify/3.0.0",
+    "wanted": {
+      "dependentId": "/load-json-file/4.0.0",
+      "name": "pify",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "629 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/semver/5.7.2",
+    "wanted": {
+      "dependentId": "/normalize-package-data/2.5.0",
+      "name": "semver",
+      "rawSpec": "2 || 3 || 4 || 5"
+    }
+  },
+  "630 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pify/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "631 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/hosted-git-info/2.8.9",
+    "wanted": {
+      "dependentId": "/normalize-package-data/2.5.0",
+      "name": "hosted-git-info",
+      "rawSpec": "^2.1.4"
+    }
+  },
+  "632 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/hosted-git-info/2.8.9",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "633 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/hosted-git-info/2.8.9",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "634 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/through/2.3.8",
+    "wanted": {
+      "dependentId": "/listr2/3.14.0",
+      "name": "through",
+      "rawSpec": "^2.3.8"
+    }
+  },
+  "635 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/through/2.3.8",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "636 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/through/2.3.8",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "637 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/strip-bom/3.0.0",
+    "wanted": {
+      "dependentId": "/load-json-file/4.0.0",
+      "name": "strip-bom",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "638 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-bom/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "639 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-bom/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "640 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-refresh/0.8.3",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "react-refresh",
+      "rawSpec": "^0.8.3"
+    }
+  },
+  "641 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-refresh/0.8.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "642 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-refresh/0.8.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "643 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/function-bind/1.1.2",
+    "wanted": {
+      "dependentId": "/call-bind/1.0.5",
+      "name": "function-bind",
+      "rawSpec": "^1.1.2"
+    }
+  },
+  "644 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/function-bind/1.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "645 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/function-bind/1.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "646 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/set-function-length/1.1.1",
+    "wanted": {
+      "dependentId": "/call-bind/1.0.5",
+      "name": "set-function-length",
+      "rawSpec": "^1.1.1"
+    }
+  },
+  "647 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/set-function-length/1.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "648 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/set-function-length/1.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "649 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/resolve/1.22.8",
+    "wanted": {
+      "dependentId": "/normalize-package-data/2.5.0",
+      "name": "resolve",
+      "rawSpec": "^1.10.0"
+    }
+  },
+  "650 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/resolve/1.22.8",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "651 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/call-bind/1.0.5",
+    "wanted": {
+      "dependentId": "/es-abstract/1.22.3",
+      "name": "call-bind",
+      "rawSpec": "^1.0.5"
+    }
+  },
+  "652 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/resolve/1.22.8",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "653 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/es-set-tostringtag/2.0.2",
+    "wanted": {
+      "dependentId": "/es-abstract/1.22.3",
+      "name": "es-set-tostringtag",
+      "rawSpec": "^2.0.1"
+    }
+  },
+  "654 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/es-set-tostringtag/2.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "655 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/es-set-tostringtag/2.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "656 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fruntime-corejs3"
+  },
+  "657 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/arraybuffer.prototype.slice/1.0.2",
+    "wanted": {
+      "dependentId": "/es-abstract/1.22.3",
+      "name": "arraybuffer.prototype.slice",
+      "rawSpec": "^1.0.2"
+    }
+  },
+  "658 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/arraybuffer.prototype.slice/1.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "659 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/arraybuffer.prototype.slice/1.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "660 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/es-to-primitive/1.2.1",
+    "wanted": {
+      "dependentId": "/es-abstract/1.22.3",
+      "name": "es-to-primitive",
+      "rawSpec": "^1.2.1"
+    }
+  },
+  "661 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/es-to-primitive/1.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "662 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/es-to-primitive/1.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "663 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/available-typed-arrays/1.0.5",
+    "wanted": {
+      "dependentId": "/es-abstract/1.22.3",
+      "name": "available-typed-arrays",
+      "rawSpec": "^1.0.5"
+    }
+  },
+  "664 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/available-typed-arrays/1.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "665 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/available-typed-arrays/1.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "666 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/function.prototype.name/1.1.6",
+    "wanted": {
+      "dependentId": "/es-abstract/1.22.3",
+      "name": "function.prototype.name",
+      "rawSpec": "^1.1.6"
+    }
+  },
+  "667 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/function.prototype.name/1.1.6",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "668 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/function.prototype.name/1.1.6",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "669 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/validate-npm-package-license/3.0.4",
+    "wanted": {
+      "dependentId": "/normalize-package-data/2.5.0",
+      "name": "validate-npm-package-license",
+      "rawSpec": "^3.0.1"
+    }
+  },
+  "670 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/validate-npm-package-license/3.0.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "671 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/validate-npm-package-license/3.0.4",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "672 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/get-symbol-description/1.0.0",
+    "wanted": {
+      "dependentId": "/es-abstract/1.22.3",
+      "name": "get-symbol-description",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "673 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/get-symbol-description/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "674 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/get-symbol-description/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "675 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/globalthis/1.0.3",
+    "wanted": {
+      "dependentId": "/es-abstract/1.22.3",
+      "name": "globalthis",
+      "rawSpec": "^1.0.3"
+    }
+  },
+  "676 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/globalthis/1.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "677 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/globalthis/1.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "678 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/gopd/1.0.1",
+    "wanted": {
+      "dependentId": "/es-abstract/1.22.3",
+      "name": "gopd",
+      "rawSpec": "^1.0.1"
+    }
+  },
+  "679 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/gopd/1.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "680 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/has-symbols/1.0.3",
+    "wanted": {
+      "dependentId": "/es-abstract/1.22.3",
+      "name": "has-symbols",
+      "rawSpec": "^1.0.3"
+    }
+  },
+  "681 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/gopd/1.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "682 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/rxjs"
+  },
+  "683 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/strip-final-newline"
+  },
+  "684 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/has-proto/1.0.1",
+    "wanted": {
+      "dependentId": "/es-abstract/1.22.3",
+      "name": "has-proto",
+      "rawSpec": "^1.0.1"
+    }
+  },
+  "685 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-proto/1.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "686 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-proto/1.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "687 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/hasown/2.0.0",
+    "wanted": {
+      "dependentId": "/es-abstract/1.22.3",
+      "name": "hasown",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "688 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/hasown/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "689 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/hasown/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "690 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/has-property-descriptors/1.0.1",
+    "wanted": {
+      "dependentId": "/es-abstract/1.22.3",
+      "name": "has-property-descriptors",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "691 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-property-descriptors/1.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "692 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-property-descriptors/1.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "693 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-array-buffer/3.0.2",
+    "wanted": {
+      "dependentId": "/es-abstract/1.22.3",
+      "name": "is-array-buffer",
+      "rawSpec": "^3.0.2"
+    }
+  },
+  "694 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-array-buffer/3.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "695 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-array-buffer/3.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "696 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/internal-slot/1.0.6",
+    "wanted": {
+      "dependentId": "/es-abstract/1.22.3",
+      "name": "internal-slot",
+      "rawSpec": "^1.0.5"
+    }
+  },
+  "697 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/internal-slot/1.0.6",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "resolved"
+  },
+  "698 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/internal-slot/1.0.6",
+    "requester": "/home/workspace/reactjs/coding-practices/events",
+    "status": "found_in_store"
+  },
+  "699 error pnpm": {
+    "code": "ERR_PNPM_META_FETCH_FAIL",
+    "attempts": 1,
+    "pkgsStack": [
+      {
+        "id": "registry.npmjs.org/eslint-plugin-prettier/3.3.1",
+        "name": "eslint-plugin-prettier",
+        "version": "3.3.1"
+      },
+      {
+        "id": "registry.npmjs.org/prettier-linter-helpers/1.0.0",
+        "name": "prettier-linter-helpers",
+        "version": "1.0.0"
+      }
+    ],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npmjs.org/fast-diff: request to https://registry.npmjs.org/fast-diff failed, reason: socket hang up",
+      "code": "ERR_PNPM_META_FETCH_FAIL",
+      "stack": "pnpm: GET https://registry.npmjs.org/fast-diff: request to https://registry.npmjs.org/fast-diff failed, reason: socket hang up\n    at RetryOperation._fn (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:85807:19)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  }
+}
